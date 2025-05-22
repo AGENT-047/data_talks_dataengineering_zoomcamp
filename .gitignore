@@ -1,0 +1,38 @@
+.bash_logout
+.config
+.landscape  
+.motd_shown      
+.sudo_as_admin_successful  
+.wget-hsts              
+venvs
+.bashrc       
+.docker  
+.ipython        
+.lesshst    
+.profile         
+.viminfo                   
+.bash_history  
+.cache         
+.jupyter        
+.local      
+.python_history  
+.vscode-remote-containers  
+ny_taxi_postgres_data
+
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+venv/
+
+# Ignore environment files
+.env
+
+# Ignore VS Code config
+.vscode/
+
+# Ignore data files
+*.csv
+*.parquet
