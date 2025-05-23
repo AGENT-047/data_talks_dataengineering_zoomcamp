@@ -21,9 +21,9 @@ def main(params):
 
     # url="http://172.24.127.214:8000/yellow_tripdata_2021-01.parquet"
 
-    os.system(f"wget {url} -o {parquet_name}")
+    os.system(f"wget {url} -O {parquet_name}")
 
-    yellow_taxi_data=pq.read_table("yellow_tripdata_2021-01.parquet")
+    yellow_taxi_data=pq.read_table(f"{parquet_name}")
 
     engine=create_engine(f'postgresql://{user}:{password}@{host}:{port}/{database_name}')
     # # print(engine.connect())//to check whether connection is happening or not
